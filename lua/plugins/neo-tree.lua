@@ -12,6 +12,9 @@ return {
         ---@type neotree.Config?
         opts = {
             -- fill any relevant options neotree
+            filesystem = {
+                use_libuv_file_watcher = true,
+            },
         },
     },
 }
