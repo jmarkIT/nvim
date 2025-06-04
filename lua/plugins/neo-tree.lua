@@ -14,6 +14,7 @@ return {
             -- fill any relevant options neotree
             filesystem = {
                 use_libuv_file_watcher = true,
+                follow_current_file = true,
             },
         },
     },
