@@ -13,7 +13,6 @@ return {
         opts = {
             -- fill any relevant options neotree
             -- currently setting this in ../neo-tree-config.lua
-            },
         },
     },
 }
