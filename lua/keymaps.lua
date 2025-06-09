@@ -9,6 +9,7 @@ local opts = {
 -----------------
 
 vim.g.mapleader = " "
+vim.keymap.set('n', '\\', ':lua require("oil").open_float(".")<CR>', opts)
 
 -- Hint: see `:h vim.map.set()`
 -- Better window navigation
@@ -29,7 +30,8 @@ vim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>', opts)
 vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 -- Activate fzf-lua
-vim.keymap.set('n', '<leader>f', function() require("fzf-lua").files() end, opts)
+-- vim.keymap.set('n', '<leader>f', ':lua require("fzf-lua").files()', opts)
+vim.keymap.set('n', '<leader>f', ':FzfLua files<CR>', opts)
 
 -- Quick move between buffers
 vim.keymap.set('n', '<leader>h', ':bprev<CR>', opts)

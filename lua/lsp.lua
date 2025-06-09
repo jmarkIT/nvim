@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         keymap.set("n", "gd", lsp.buf.definition, bufopts)
         keymap.set("n", "<space>rn", lsp.buf.rename, bufopts)
         keymap.set("n", "K", lsp.buf.hover, bufopts)
-        keymap.set("n", "<space>ff", function()
+        keymap.set("n", "<space>xx", function()
             require("conform").format({ async = true, lsp_fallback = true })
         end, bufopts)
     end

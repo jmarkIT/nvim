@@ -24,3 +24,9 @@ vim.opt.hlsearch = false 		-- do not highlight matches
 vim.opt.ignorecase = true 		-- ignore case in searches by default
 vim.opt.smartcase = true 		-- but make it case sensitive if an upppercase is entered
 
+vim.filetype.add({
+    extension = {
+        tf = "terraform"
+    }
+})
+
