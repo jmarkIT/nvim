@@ -26,9 +26,9 @@ vim.opt.smartcase = true 		-- but make it case sensitive if an upppercase is ent
 
 vim.filetype.add({
     extension = {
-        tf = "terraform"
-        recipe = "xml"
-        mobileconfig = "xml"
+        tf = "terraform",
+        recipe = "xml",
+        mobileconfig = "xml",
     }
 })
 
