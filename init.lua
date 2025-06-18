@@ -8,3 +8,4 @@ require('mini-config')
 require 'plugins.autopairs'
 require('lualine-config')
 require('oil-config')
+require 'plugins.trouble'
