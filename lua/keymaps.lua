@@ -31,7 +31,7 @@ vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>', opts)
 
 -- Activate fzf-lua
 -- vim.keymap.set('n', '<leader>f', ':lua require("fzf-lua").files()', opts)
-vim.keymap.set('n', '<leader>f', ':FzfLua files<CR>', opts)
+vim.keymap.set('n', '<leader>ff', ':FzfLua files<CR>', opts)
 
 -- Quick move between buffers
 vim.keymap.set('n', '<leader>h', ':bprev<CR>', opts)
